@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+</head>
+
+<body>
+  <div ng-app="googleMapsDemo">
+
+    <!--following with element directive -->
+    <maps lattitude="52.5243700" longitude="13.4105300" cityName="Berlin" selector="berlinCity">
+      <div id="berlinCity"  style="width:500px;height:380px;"></div>
+    </maps>
+
+    <!--following with attribute directive -->
+    <div maps longitude="72.85" lattitude="19.01" cityName="Mumbai" id="mumbaiCity" selector="mumbaiCity" style="width:500px;height:380px;margin-top: 15px"></div>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+</html>
